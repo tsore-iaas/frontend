@@ -1,0 +1,52 @@
+{
+  "vms": [
+    {
+      "id": 1,
+      "user_id": 5,
+      "hostname": "vm-test-1",
+      "ip_addr": "192.168.1.10",
+      "gateway": "192.168.1.1",
+      "ssh_key": "ssh-rsa AAAAB3NzaC1...",
+      "status": "running",
+      "template": {
+        "cpu": 2,
+        "ram": 2048,
+        "storage": 20,
+        "kernel_image": "/var/lib/firecracker/hello/hello-vmlinux.bin",
+        "rootfs_image": "/var/lib/firecracker/hello/hello-rootfs.ext4"
+      }
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "hostname": "vm-test-2",
+      "ip_addr": "192.168.1.11",
+      "gateway": "192.168.1.1",
+      "ssh_key": "ssh-rsa AAAAB3NzaC1...",
+      "status": "stopped",
+      "template": {
+        "cpu": 4,
+        "ram": 4096,
+        "storage": 40,
+        "kernel_image": "/var/lib/firecracker/hello/hello-vmlinux.bin",
+        "rootfs_image": "/var/lib/firecracker/hello/hello-rootfs.ext4"
+      }
+    },
+    {
+      "id": 3,
+      "user_id": 5,
+      "hostname": "vm-other-user",
+      "ip_addr": "192.168.1.12",
+      "gateway": "192.168.1.1",
+      "ssh_key": "ssh-rsa AAAAB3NzaC1...",
+      "status": "running",
+      "template": {
+        "cpu": 1,
+        "ram": 1024,
+        "storage": 10,
+        "kernel_image": "/var/lib/firecracker/hello/hello-vmlinux.bin",
+        "rootfs_image": "/var/lib/firecracker/hello/hello-rootfs.ext4"
+      }
+    }
+  ]
+}
